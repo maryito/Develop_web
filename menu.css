@@ -1,0 +1,119 @@
+/*ul#menu {
+    padding: 0;
+    margin-bottom: 11px;
+     position:center;
+    float:left;
+
+ left:50%;
+ list-style-type:none;
+ margin:0 auto;
+ ; font-size: 24pt 
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    color: white;
+    background-color: blue;
+
+}*/
+* {
+margin:0px;
+padding:0px;
+}
+#header {
+
+margin:auto;
+width:500px;
+font-family:Arial, Helvetica, sans-serif;
+}
+ul, ol {
+list-style:none;
+}
+.nav > li {
+float:left;
+}
+.nav li a {
+background-color:#000;
+color:#fff;
+text-decoration:none;
+padding:10px 12px;
+display:block;
+}
+.nav li a:hover {
+background-color:#434343;
+}
+.nav li ul {
+display:none;
+position:absolute;
+min-width:140px;
+}
+.nav li:hover > ul {
+display:block;
+}
+.nav li ul li {
+position:relative;
+}
+.nav li ul li ul {
+right:-140px;
+top:0px;
+}
+
+.slider{
+    padding: 100px;
+    width: 95%;
+    margin: auto;
+}
+
+.slider ul
+{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    text-align: center;
+
+    animation: cambio 20s infinite;
+    animation-timing-function: ease-out;
+
+}
+
+.slider: nth-child (2) ul {
+        animation-timing-function: ease-in;
+
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 30%;    
+
+}
+
+@keyframes cambio{
+    0% {margin-left:0; }
+    20% {margin-left:0; }
+
+    25% {margin-left:-100%; }
+    45% {margin-left:-100%; }
+
+
+    75% {margin-left:-300%; }
+    100% {margin-left:-300%; }
+
+  
+}
+
